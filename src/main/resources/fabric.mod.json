@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "modid",
+  "version": "${version}",
+
+  "name": "More Animals!",
+  "description": "This mod brings more animals inside the Minecraft world.",
+  "authors": [
+    "Made with love by lilcristo <3"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.lilcristo.moreanimals.MoreAnimalsMod"
+    ],
+    "client": [
+      "net.lilcristo.moreanimals.MoreAnimalsModClient"
+    ]
+  },
+  "mixins": [
+    "moreanimals.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
